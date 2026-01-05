@@ -79,7 +79,8 @@ seizowatch/
 ├── generate_data.py # Synthetic data generator
 └── README.md
 
-
+Video Drive Link - https://drive.google.com/drive/folders/125rSvj0FguWiuEFrU0g5G4aTWvwfTadB?usp=sharing
+Port forwarding link: https://9f5zd9v5-3002.inc1.devtunnels.ms/
 
 ---
 
@@ -96,4 +97,4 @@ cd dashboard
 npm install
 npm run dev
 
-Port forwarding link: https://9f5zd9v5-3002.inc1.devtunnels.ms/
+
