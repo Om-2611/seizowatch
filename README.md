@@ -95,3 +95,5 @@ Frontend Setup
 cd dashboard
 npm install
 npm run dev
+
+Port forwarding link: https://9f5zd9v5-3002.inc1.devtunnels.ms/
