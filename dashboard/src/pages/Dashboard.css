@@ -14,18 +14,19 @@
 .dashboard-header h1 {
   font-size: 2rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #e0e0e0;
   margin: 0;
 }
 
 /* Real-time Monitoring Widget */
 .realtime-monitoring {
-  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(59, 130, 246, 0.05));
-  border: 2px solid rgba(14, 165, 233, 0.3);
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(59, 130, 246, 0.1));
+  border: 2px solid rgba(14, 165, 233, 0.4);
   border-radius: 16px;
   padding: 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.1);
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .realtime-header {
@@ -39,7 +40,7 @@
   margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #e0e0e0;
   flex: 1;
 }
 
@@ -86,14 +87,15 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(10px);
 }
 
 .realtime-label {
   font-size: 0.75rem;
-  color: #666;
+  color: #9ca3af;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -102,7 +104,7 @@
 .realtime-value {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0ea5e9;
+  color: #38bdf8;
 }
 
 .realtime-status {
@@ -146,13 +148,15 @@
 }
 
 .status-badge.active {
-  background-color: #d4edda;
-  color: #155724;
+  background-color: rgba(74, 222, 128, 0.2);
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  color: #86efac;
 }
 
 .status-badge.inactive {
-  background-color: #f8d7da;
-  color: #721c24;
+  background-color: rgba(248, 113, 113, 0.2);
+  border: 1px solid rgba(248, 113, 113, 0.4);
+  color: #fca5a5;
 }
 
 .status-dot {
@@ -176,20 +180,22 @@
 }
 
 .stat-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
 }
 
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .stat-icon {
@@ -208,35 +214,37 @@
 
 .stat-label {
   font-size: 0.875rem;
-  color: #666;
-  margin: 0 0 0.25rem 0;
+  color: #9ca3af;
+  margin: 0 0 0.5rem 0;
   font-weight: 500;
 }
 
 .stat-value {
   font-size: 2rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #e0e0e0;
   margin: 0;
 }
 
 .stat-sublabel {
   font-size: 0.75rem;
-  color: #999;
+  color: #6b7280;
   margin: 0.25rem 0 0 0;
 }
 
 .recent-events {
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .recent-events h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #e0e0e0;
   margin: 0 0 1rem 0;
 }
 
@@ -247,14 +255,16 @@
 }
 
 .event-preview-card {
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   padding: 1rem;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
 }
 
 .event-preview-card:hover {
-  background-color: #f8f9fa;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .event-preview-header {
@@ -266,7 +276,7 @@
 
 .event-time {
   font-weight: 600;
-  color: #333;
+  color: #e0e0e0;
 }
 
 .verified-badge {
@@ -282,7 +292,7 @@
   display: flex;
   gap: 1.5rem;
   font-size: 0.875rem;
-  color: #666;
+  color: #9ca3af;
 }
 
 .loading-state,
@@ -294,7 +304,7 @@
   justify-content: center;
   padding: 4rem 2rem;
   text-align: center;
-  color: #666;
+  color: #9ca3af;
 }
 
 .spinner {
@@ -324,17 +334,18 @@
 
 /* Chart Container */
 .chart-container {
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 2rem;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .chart-container h2 {
   margin: 0 0 1.5rem 0;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #e0e0e0;
 }
